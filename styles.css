@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    background-image: url(https://pt.quizur.com/_image?href=https://dev-beta.quizur.com/storage/v1/object/public//imagens//20050434/14e505a0-39f2-4590-9445-d8a29fac7962.png&w=600&h=600&f=webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.cano {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: animacao-cano 2s infinite linear;
+}
+
+@keyframes animacao-cano {
+    from {
+    right: -80px;
+    }
+
+    to {
+        right: 100%
+    }
+}
+
+.boneco {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+}
+
+.jump {
+    animation: boneco 0.5s ease-out;
+}
+
+@keyframes boneco {
+    0% {
+        bottom: 0px;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+audio {
+    background-color: white;
+    display: none;
+}
